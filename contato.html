@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" id="html-contato">
+<html lang="pt-br"  id="html-contato">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
@@ -32,20 +32,20 @@
         <main>
             <form>
                 <label for="nomesobrenome">Nome e sobrenome</label>
-                <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="José de Arruda">
+                <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Arthur Paz de Arruda">
 
                 <label for="email">Email</label>
-                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@pazeamor.com">
 
                 <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" class="input-padrao" placeholder="(XX) 9XXXX-XXXX">
+                <input type="tel" id="telefone" class="input-padrao" placeholder="(51) 9XXXX-XXXX">
                 
                 <label for="mensagem">Mensagem</label>
                 <textarea rows="10" id="mensagem" class="input-padrao" required> </textarea>
 
                 <fieldset>
                     <legend>Como prefere ser contactado?</legend>
-                    <label class="checkbox"><input type="radio" name="contato" value="email">E-mail</label>
+                    <label><input type="radio" name="contato" value="email">E-mail</label>
                     <label><input type="radio" name="contato" value="telefone">Telefone</label>
                     <label><input type="radio" name="contato" value="whatsaspp" checked>Whats-app</label>
                     
@@ -66,29 +66,30 @@
 
             </form>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Dia</th>
-                        <th>Horário</th>
-                    </tr>
-                </thead>    
-                <tbody>
-                    <tr>
-                        <td>Segunda</td>
-                        <td>08:00 - 20:00</td>
-                    </tr>
-                    <tr>
-                        <td>Quarta</td>
-                        <td>08:00 - 20:00</td>
-                    </tr>
-                    <tr>
-                        <td>Sexta</td>
-                        <td>08:00 - 20:00</td>
-                    </tr>
-                </tbody> 
-            </table>
-
+            <div class="tabela-horarios">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>    
+                    <tbody>
+                        <tr>
+                            <td>Segunda</td>
+                            <td>08:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta</td>
+                            <td>08:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta</td>
+                            <td>08:00 - 20:00</td>
+                        </tr>
+                    </tbody> 
+                </table>
+            </div>
 
 
         </main>

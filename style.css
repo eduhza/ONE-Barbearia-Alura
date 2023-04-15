@@ -229,20 +229,30 @@ footer{
 
 form {
     padding: 3em 0 0 0;
-    margin-right: 3em;
+    margin: 0 auto;
+    width: 90%;
 }
 
-form label, legend {
+form label, legend, textarea {
     display: block;
     font-size: 20px;
-    margin: 0 0 10px 0;
+    margin: 0 0 0.6em 0;
+}
+
+form legend {
+    display: block;
+    font-size: 20px;
 }
 
 .input-padrao {
     display: block;
-    margin: 0 0 20px 0;
+    margin: 0 0.6em 0.6em 0;
     padding: 10px 20px;
     width: 50%;
+}
+
+fieldset {
+    margin: 1em 0;
 }
 
 .checkbox {
@@ -250,7 +260,7 @@ form label, legend {
 }
 
 .enviar {
-    width: 40%;
+    width: 55%;
     padding: 15px 0;
     background: orange;
     color: #FFFFFF;
@@ -267,9 +277,13 @@ form label, legend {
     transform: scale(1.2);
 }
 
-table {
-    margin: 20px 0 40px 0;
+.tabela-horarios {
+    width: 50%;
+    margin: 0 5%;
+    padding: 3em 0 ;
+    text-align: center;
 }
+
 
 thead {
     background: #555555;
@@ -328,4 +342,14 @@ td, th {
         border-radius: 20px;
     }
 
+    /** Página Contato **/
+    .input-padrao, .tabela-horarios {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .enviar {
+        width: 100%;
+    }
 }
