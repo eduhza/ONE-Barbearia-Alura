@@ -1,7 +1,8 @@
-/***** CSS da página inicial *****/
+/************************************/
+/******* CSS da página inicial ******/
+/************************************/
 html {
     width: fit-content;
-    margin: auto;
 }
 
 body {
@@ -152,53 +153,34 @@ main {
     padding: 3em 0;
 }
 
-@media screen and (max-width: 600px) {
-    nav {
-        position: static;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    nav li {
-        display: block;
-        padding: 5px 0;
-        text-align: center;
-    }
-
-    .lista-beneficios {
-        width: 90%;
-        margin: 0 auto;
-        display: block;
-        text-align: center;
-    }
-
-    .imagem-beneficios {
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-        padding-top: 1.5em;
-        display: block;
-    }
-
+footer{
+    text-align: center;
+    background: url("bg.jpg");
 }
 
-/****** CSS da página Produtos ******/
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 15px;
+}
 
+/************************************/
+/****** CSS da página Produtos ******/
+/************************************/
 .produtos {
-    width: 940px;
+    width: 90%;
     margin: 0 auto;
-    padding: 50px 0px;
+    padding: 3em 0px;
+    text-align: center;
 }
 
 .produtos li{
-    display: inline-block;
+    display: table-cell;
     text-align: center;
     width: 30%;
     vertical-align: top;
-    margin: 0 1.5%;
-    padding: 30px 20px;
+    margin: 0 auto;
+    padding: 1em 0.2em;
     box-sizing: border-box;
     border: solid 2px #000000;
     border-radius: 20px;
@@ -218,11 +200,18 @@ main {
 
 .produtos h2 {
     font-weight: bold;
-    font-size: 30px;
+    /* font-size: 30px; */
+    width: 90%;
 }
 
 .produto-descricao {
     font-size: 18px;
+}
+
+.produtos img {
+    padding: 0.5em 0;
+    text-align: center;
+    width: 95%;
 }
 
 .produto-preco {
@@ -231,19 +220,16 @@ main {
     margin: 10px 0 0 0;
 }
 
-footer{
-    text-align: center;
-    background: url("bg.jpg");
-}
-
-.copyright {
-    color: #FFFFFF;
-    font-size: 13px;
-    margin-top: 15px;
+/************************************/
+/****** CSS da página Contatos ******/
+/************************************/
+#html-contato {
+    width: auto;
 }
 
 form {
-    margin: 40px auto;
+    padding: 3em 0 0 0;
+    margin-right: 3em;
 }
 
 form label, legend {
@@ -296,4 +282,50 @@ td, th {
     padding: 8px 15px;
 }
 
+/******************************************************/
+/****** CSS Para tela menor que 600px de largura ******/
+/******************************************************/
+@media screen and (max-width: 600px) {
+    nav {
+        position: static;
+    }
 
+    h1 {
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .lista-beneficios {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    .imagem-beneficios {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 1.5em;
+        display: block;
+    }
+
+    /** Página Produtos **/
+    
+    .produtos li{
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0 0 1.5em 0;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        border: solid 2px #000000;
+        border-radius: 20px;
+    }
+
+}
