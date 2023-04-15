@@ -1,0 +1,298 @@
+/***** CSS da página inicial *****/
+html {
+    width: fit-content;
+    margin: auto;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    background-color: #BBBBBB;
+    margin: 0 0px 0 0px;
+}
+
+.caixa {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+}
+
+nav {
+    position: absolute; 
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.banner {
+    width: 100%;
+}
+
+main {
+    background: linear-gradient(#FEFEFE, #888888);
+} 
+
+.principal {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3em 0 0 0;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em; /*font 2x o tamanho padrão*/
+    margin: 0 0 1em 0; 
+    clear: left;
+}
+
+.titulo-principal::first-letter {
+    font-weight: bolder;
+}
+
+.conteudo-principal {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.conteudo-principal p {
+    margin: 0 0 1em 0;
+    text-align: justify;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.imagem-utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 0 20px;
+}
+
+.mapa {
+    padding: 3em 0 0 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mapa-conteudo {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mapa p {
+    padding: 0 0 2em 0;
+    text-align: center;
+}
+
+.beneficios {
+    padding: 3em 0 0 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.imagem-beneficios {
+    width: 50%;
+    margin: 0 0px 0 0;
+}
+
+.conteudo-beneficios {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.lista-beneficios {
+    width: 35%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0px 0 50px;
+}
+
+.itens {
+    line-height: 2em;
+}
+
+.itens::before{
+    content: "★ ";
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.video {
+    margin: 0 auto;
+    text-align: center;
+    padding: 3em 0;
+}
+
+
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0px;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: solid 2px #000000;
+    border-radius: 20px;
+}
+
+.produtos li:hover {
+    border: #C78C19 5px solid;
+}
+
+.produtos li:active {
+    border: #088C19 10px solid;
+}
+
+.produtos li:hover h2{
+    font-size: 40px;
+}
+
+.produtos h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+footer{
+    text-align: center;
+    background: url("bg.jpg");
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+form {
+    margin: 40px auto;
+}
+
+form label, legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px 0;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 20px 0 40px 0;
+}
+
+thead {
+    background: #555555;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+
+@media screen and (max-width: 600px) {
+    nav {
+        position: static;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .lista-beneficios {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    .imagem-beneficios {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 1.5em;
+        display: block;
+    }
+
+}
