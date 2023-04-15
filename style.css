@@ -76,6 +76,12 @@ main {
     margin: 0 auto;
 }
 
+.imagem-utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 0 20px;
+}
+
 .conteudo-principal p {
     margin: 0 0 1em 0;
     text-align: justify;
@@ -87,12 +93,6 @@ main {
 
 .principal em {
     font-style: italic;
-}
-
-.imagem-utensilios {
-    width: 120px;
-    float: left;
-    margin: 0 20px 0 20px;
 }
 
 .mapa {
@@ -115,11 +115,6 @@ main {
     padding: 3em 0 0 0;
     width: 90%;
     margin: 0 auto;
-}
-
-.imagem-beneficios {
-    width: 50%;
-    margin: 0 0px 0 0;
 }
 
 .conteudo-beneficios {
@@ -146,13 +141,50 @@ main {
     font-weight: bold;
 }
 
+.imagem-beneficios {
+    width: 50%;
+    margin: 0 0px 0 0;
+}
+
 .video {
     margin: 0 auto;
     text-align: center;
     padding: 3em 0;
 }
 
+@media screen and (max-width: 600px) {
+    nav {
+        position: static;
+    }
 
+    h1 {
+        text-align: center;
+    }
+
+    nav li {
+        display: block;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .lista-beneficios {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+
+    .imagem-beneficios {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 1.5em;
+        display: block;
+    }
+
+}
+
+/****** CSS da página Produtos ******/
 
 .produtos {
     width: 940px;
@@ -265,34 +297,3 @@ td, th {
 }
 
 
-@media screen and (max-width: 600px) {
-    nav {
-        position: static;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    nav li {
-        display: block;
-        padding: 5px 0;
-        text-align: center;
-    }
-
-    .lista-beneficios {
-        width: 90%;
-        margin: 0 auto;
-        display: block;
-        text-align: center;
-    }
-
-    .imagem-beneficios {
-        width: 90%;
-        margin: 0 auto;
-        text-align: center;
-        padding-top: 1.5em;
-        display: block;
-    }
-
-}
