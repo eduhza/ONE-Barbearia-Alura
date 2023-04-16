@@ -4,3 +4,5 @@
 
 # :haircut: Barbearia Alura :scissors:
 Projeto desenvolvido como parte dos estudos sobre HTML5 e CSS3 da [Alura](https://www.alura.com.br/).
+
+**Link para o visualizar o site:** [Barbearia Alura](https://eduhza.github.io/ONE-Barbearia-Alura/)
