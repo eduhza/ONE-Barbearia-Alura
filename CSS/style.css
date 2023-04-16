@@ -155,7 +155,7 @@ main {
 
 footer{
     text-align: center;
-    background: url("bg.jpg");
+    background: url("Imagens/bg.jpg");
 }
 
 .copyright {
@@ -211,7 +211,7 @@ footer{
 .produtos img {
     padding: 0.5em 0;
     text-align: center;
-    width: 95%;
+    width: 80%;
 }
 
 .produto-preco {
